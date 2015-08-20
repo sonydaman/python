@@ -8,8 +8,11 @@ else:
 
 
 #-----------------------------------------------
-
-                #SECOND PROGRAM
+#http://www.tutorialspoint.com/python/python_reg_expressions.htm
+#FOR NPP+
+#cd "$(FULL_CURRENT_PATH)"
+#C:\Python27\python.exe -u "$(FULL_CURRENT_PATH)" 
+ #SECOND PROGRAM
 
 #-----------------------------------------------
 
