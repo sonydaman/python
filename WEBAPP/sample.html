@@ -1,0 +1,19 @@
+
+<form  enctype="multipart/form-data" action="hello.py" method="post">
+First Name: <input type="text" name="first_name">  <br />
+
+Last Name: <input type="text" name="last_name" />
+<input type="checkbox" name="maths" value="on" /> Maths
+<input type="checkbox" name="physics" value="on" /> Physics
+<textarea name="textcontent" cols="40" rows="4">
+Type your text here...
+</textarea>
+<select name="dropdown">
+<option value="Maths" selected>Maths</option>
+<option value="Physics">Physics</option>
+</select>
+
+<p>File: <input type="file" name="filename" /></p>
+<a href="download.py">Download</a>
+<input type="submit" value="Submit" />
+</form>
