@@ -51,7 +51,27 @@ else:
    
    
    
-print "Content-type:text/html\r\n\r\n"
+from flask import Blueprint, request, g, redirect, url_for, abort, \
+                  render_template
+
+
+admin = Blueprint('admin', __name__, template_folder='templates')
+
+
+
+# project/app/admin/__init__.py
+
+# so that we can import anything from admin folder
+# without the extra admin syntax
+from admin import *
+
+
+
+# project/__init__.py
+
+# bellow line "db = SQLAlchemy(app)"
+from admin import admin # the Blueprint instance that we created
+app.register_blueprint(admin, url_prefix='/admin')
 print "<html>"
 print "<head>"
 print "<title>Hello - Second CGI Program</title>"
